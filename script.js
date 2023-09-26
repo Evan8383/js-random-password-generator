@@ -9,6 +9,7 @@ const closeBtn = document.querySelector("#closeBtn")
 const passwordMenu = document.querySelector("#passwordMenu")
 const passwordLengthDisplay = document.querySelector("#passwordLengthDisplay")
 const passwordText = document.querySelector("#password")
+const clearBtn = document.querySelector("#clearBtn")
 
 
 // random character selection functions
@@ -29,18 +30,21 @@ function randomSymbols() {
   return symbols[Math.floor(Math.random() * symbols.length)]
 }
 
+// Event listener to clear the current generated password
+clearBtn.addEventListener('click', () => {
+  passwordText.value = ''
+})
 // Add event listener to generate button
 generateBtn.addEventListener("click", () => {
   if (!passwordMenu.classList.contains("active")) {
     passwordMenu.classList.add("active")
-    console.log("this works")
   } else {
     getChecked()
   }
 });
 function getChecked() {
   const checkboxes = [uppercase, lowercase, numbers, symbols]
-  const checked = []
+  let checked = []
 
   checkboxes.forEach((checkbox) => {
     if (checkbox.checked) {
@@ -48,7 +52,7 @@ function getChecked() {
     }
   })
   if (checked.length === 0) {
-    console.log("Please select at least one option to generate a password")
+    alert("Please choose at least one option")
   } else {
     generatePassword(checked)
   }

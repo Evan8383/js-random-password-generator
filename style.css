@@ -76,8 +76,7 @@ header {
   border: none;
   background-color: hsl(360, 91%, 36%);
   border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
-    0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px 0px;
   color: hsl(0, 0%, 100%);
   display: inline-block;
   font-size: 22px;
@@ -118,33 +117,31 @@ button[disabled] {
   overflow: hidden;
 }
 
-.password-menu{
+.password-menu {
   display: none;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
-.password-menu.active{
+
+.password-menu.active {
   display: flex;
 }
-.password-menu p{
+
+.password-menu p {
   width: fit-content;
   font-size: 1em;
 }
+
 .password-menu p:first-child {
   padding-right: 5px;
 }
-.passwordLength{
-  padding: 0 1px;
-  appearance: none;
-  background-color: black;
-  opacity: .7;
-  width: 150px;
-  height: 5px;
-  outline: none;
-  border-radius: 15px;
+
+.passwordLength {
+  width: 150px
 }
-.password-menu ul{
+
+.password-menu ul {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -153,17 +150,21 @@ button[disabled] {
   padding: 0;
   width: 100%;
 }
-.password-menu ul li{
+
+.password-menu ul li {
   display: flex;
 }
-.password-menu ul li label{
+
+.password-menu ul li label {
   width: 90px;
   text-align: left;
 }
-.password-menu ul li input{
+
+.password-menu ul li input {
   width: 30px
 }
-.closeBtn{
+
+.closeBtn {
   text-align: center;
 }
 
