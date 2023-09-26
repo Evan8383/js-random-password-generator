@@ -119,10 +119,52 @@ button[disabled] {
 }
 
 .password-menu{
-  display: none
+  display: none;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 .password-menu.active{
-  display: block
+  display: flex;
+}
+.password-menu p{
+  width: fit-content;
+  font-size: 1em;
+}
+.password-menu p:first-child {
+  padding-right: 5px;
+}
+.passwordLength{
+  padding: 0 1px;
+  appearance: none;
+  background-color: black;
+  opacity: .7;
+  width: 150px;
+  height: 5px;
+  outline: none;
+  border-radius: 15px;
+}
+.password-menu ul{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+.password-menu ul li{
+  display: flex;
+}
+.password-menu ul li label{
+  width: 90px;
+  text-align: left;
+}
+.password-menu ul li input{
+  width: 30px
+}
+.closeBtn{
+  text-align: center;
 }
 
 @media (max-width: 690px) {

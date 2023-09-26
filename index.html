@@ -1,43 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Password Generator</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Password Generator</h1>
-      </header>
-      <div class="card">
-        <div class="card-header">
-          <h2>Generate a Password</h2>
-        </div>
-        <div class="card-body">
-          <textarea
-            readonly
-            id="password"
-            placeholder="Your Secure Password"
-            aria-label="Generated Password"
-          ></textarea>
-        </div>
-        <div class="card-footer">
-          <button id="generate" class="btn">Generate Password</button>
-        </div>
-        <div class="password-menu" id="passwordMenu">
-          <p id="passwordLengthDisplay"></p>
-          <input type="range" id="passwordLength" min="8" max="128">
-          <input type="checkbox" id="uppercase">Uppercase
-          <input type="checkbox" id="lowercase">Lowercase
-          <input type="checkbox" id="numbers">Numbers
-          <input type="checkbox" id="symbols">Symbols
-          <button class="btn" id="closeBtn">Close</button>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Password Generator</h1>
+    </header>
+    <div class="card">
+      <div class="card-header">
+        <h2>Generate a Password</h2>
+      </div>
+      <div class="card-body">
+        <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
+      </div>
+      <div class="card-footer">
+        <button id="generate" class="btn">Generate Password</button>
+        <button id="clearBtn" class="btn">Clear</button>
+      </div>
+      <div class="password-menu active" id="passwordMenu">
+        <p>Number of Characters:</p>
+        <p id="passwordLengthDisplay"></p>  
+        <input type="range" class="passwordLength" id="passwordLength" value="8" min="8" max="128">
+        <ul>
+          <li>
+            <input type="checkbox" id="uppercase">
+            <label for="">Uppercase</label>
+          </li>
+          <li>
+            <input type="checkbox" id="lowercase">
+            <label for="">Lowercase</label>
+          </li>
+          <li>
+            <input type="checkbox" id="numbers">
+            <label for="">Number</label>
+          </li>
+          <li>
+            <input type="checkbox" id="symbols">
+            <label action="">Symbols</label>
+          </li>
+        </ul>
+        <button class="btn" id="closeBtn">Close</button>
       </div>
     </div>
-    <script src="script.js"></script>
-  </body>
+  </div>
+  <script src="script.js"></script>
+</body>
+
 </html>
