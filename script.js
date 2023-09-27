@@ -35,7 +35,13 @@ clearBtn.addEventListener('click', () => {
   passwordText.value = ''
 })
 // Add event listener to generate button
+let promptShown = false;
 generateBtn.addEventListener("click", () => {
+  if (!promptShown){
+    promptShown = true
+    confirm("please select your password criteria and press generate password again.")
+  }
+
   if (!passwordMenu.classList.contains("active")) {
     passwordMenu.classList.add("active")
   } else {
