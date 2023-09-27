@@ -4,8 +4,9 @@ Random password generator built with JS HTML and CSS.
 This is a simple web-based password generator that allows users to create strong and secure passwords based on their preferences. Users can select various password criteria, such as uppercase letters, lowercase letters, numbers, and symbols, to customize the generated passwords. The generated password can be copied and used for various purposes, enhancing online security.
 
 ## Links to live page and repository
-* Repository:
-* Live Page: 
+* Repository: https://github.com/Evan8383/js-random-password-generator
+* Live Page: https://evan8383.github.io/js-random-password-generator/
+
 ## Features
 ### Customizable password criteria:
 * Uppercase letters
