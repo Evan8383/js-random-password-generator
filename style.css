@@ -129,7 +129,7 @@ button[disabled] {
 }
 
 .password-menu p {
-  width: fit-content;
+  /* width: fit-content; */
   font-size: 1em;
 }
 
@@ -139,6 +139,10 @@ button[disabled] {
 
 .passwordLength {
   width: 150px
+}
+p:has(+input){
+  width: 30px;
+  text-align: center;
 }
 
 .password-menu ul {
